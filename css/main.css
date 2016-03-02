@@ -1,0 +1,107 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Tahoma,sans-serif,Roboto;
+}
+
+
+#topbar{
+	background: #00bcd4;
+	min-height: 64px;
+	width: 100%;
+	padding-left: 260px;
+	position: fixed;
+	z-index: 1;
+	line-height: 64px;
+	font-weight: bold;
+	text-align: left;
+	color: #fff;
+}
+
+
+#left{
+	width: 240px;
+	min-height: 1000px;
+	position: fixed;
+	background: #fff;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #e0e0e0;
+	z-index: 2;
+}
+
+
+#left_logo{
+	height: 40px;
+	width: 216px;
+	padding-top: 12px;
+    padding-right: 0px;
+    padding-bottom: 11px;
+    padding-left: 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e0e0e0;
+}
+
+
+
+#left nav dl dt{
+	height: 40px;
+	text-align: left;
+	padding-left: 20px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #333;
+	cursor: pointer;
+}
+
+#left nav dl div{
+	height: 40px;
+	text-align: left;
+	padding-left: 40px;
+	line-height: 40px;
+	color: #333;
+	cursor: pointer;
+}
+
+#right{
+	float: left;
+	background: #fff;
+	min-height: 1900px;
+	padding-top: 110px;
+	margin-left: 260px;
+	text-align: center;
+}
+
+#content{
+	width: 100%;
+	display: inline;
+	display: block;
+	text-align: left;
+	
+}
+
+#content title{
+	color: #00bcd4;
+	display: block;
+}
+
+#content img{
+	margin-top: 40px;
+	width: 1160px;
+	height: 620px;
+	display: block;
+}
+
+
+.chapter_title{
+	font-size: 34px;
+	color: #00bcd4;
+}
+
+p{
+	margin-top: 10px;
+}
