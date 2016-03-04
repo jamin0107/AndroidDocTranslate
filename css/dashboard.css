@@ -1,0 +1,163 @@
+/*
+ * Base structure
+ */
+
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+
+.navbar-fixed-top {
+    border: 0;
+}
+
+
+/*
+ * Sidebar
+ */
+
+
+/* Hide for mobile, show later */
+
+.sidebar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+
+/* Sidebar navigation */
+
+.nav-sidebar {
+    margin-right: 0;
+    /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 24px;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+.nav-sidebar li li {
+    color: #333;
+    padding: 10px 0 10px 22px;
+    list-style-type: none;
+}
+
+.nav-sidebar li li a {
+    color: #333;
+    cursor: pointer;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 0;
+}
+
+.main-container {
+    position: relative;
+    ;
+}
+
+@media (min-width: 768px) {
+    .main {}
+}
+
+.main .page-header {
+    margin-top: 0;
+    border-bottom: none;
+    height: 64px;
+    line-height: 64px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(156, 39, 176);
+    box-shadow: rgba(0, 0, 0, 0.258824) 0px 2px 5px;
+    font-weight: normal;
+    position: fixed;
+    left: 16%;
+    top: 0;
+    width: 84%;
+    top: 0;
+    z-index: 1;
+}
+
+.main .page-header span {
+    padding-left: 64px;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: left;
+    margin-top: 64px;
+}
+
+.placeholders h4 {
+    margin-bottom: 0;
+}
+
+.placeholder {
+    margin-bottom: 20px;
+}
+
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.translate{
+  color: #f00;
+  font-size: 10px;
+}
+
+.placeholders dl dd{
+  padding-left: 20px;
+}

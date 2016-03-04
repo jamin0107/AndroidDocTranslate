@@ -4,4 +4,9 @@
     border-right-style: solid;
 }
 
-
+.logo {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    height: 40px;
+    padding: 12px 0 11px 24px;
+    box-sizing: content-box;
+}
