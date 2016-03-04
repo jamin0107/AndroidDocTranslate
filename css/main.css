@@ -4,6 +4,7 @@
 	padding: 0;
 }
 body{
+	display: block;
 	font-family: Tahoma,sans-serif,Roboto;
 }
 
@@ -79,29 +80,52 @@ body{
 #content{
 	width: 100%;
 	display: inline;
-	display: block;
 	text-align: left;
 	
 }
 
 #content title{
 	color: #00bcd4;
-	display: block;
 }
 
 #content img{
 	margin-top: 40px;
 	width: 1160px;
 	height: 620px;
-	display: block;
+	
+}
+
+.chapter_toc h1{
+	height: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	color: #333;
+}
+
+
+.chapter_toc dl dt{
+	height: 40px;
+	line-height: 40px;
+	color: #00bcd4;
+	cursor: pointer;
 }
 
 
 .chapter_title{
+
 	font-size: 34px;
 	color: #00bcd4;
+}
+
+.chapter_toc{
+	border-left-width: 5px;
+	border-left-color: #00bcd4;
+	border-left-style: solid;
+	padding-left: 10px;
+	margin-top: 50px;
 }
 
 p{
 	margin-top: 10px;
 }
+
