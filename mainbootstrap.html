@@ -26,8 +26,8 @@
                 <ul class="nav nav-sidebar">
                     <li><a>Animation and Graphics</a>
                         <ul>
-                            <li><a>Overview</a></li>
-                            <li><a>property Animation</a></li>
+                            <li><a href="/demoHTHL_01.html">Overview</a></li>
+                            <li><a href="/demoHTHL_02.html">property Animation</a></li>
                             <li><a>View Animation</a></li>
                             <li><a>Drawable Animation</a></li>
                             <li><a>Canvas and Drawables</a></li>
@@ -73,7 +73,7 @@
                 <div class="main-container">
                     <h1 class="page-header"><span>Animation and Graphics Overview</span></h1>
                     <!-- 核心面板 -->
-                    <div class="row placeholders col-sm-6 col-sm-offset-1 col-md-9 col-md-offset-1">
+                    <div class="row placeholders col-sm-6 col-sm-offset-1 col-md-9 col-md-offset-1" id="Change_content">
                         <h1>Animation and Graphics Overview<a href="http://developer.android.com/guide/topics/graphics/overview.html" style="display: inline-block;" target="_black"><h5>原文链接</h5></a></h1>
                         <p class="translate">动画和图像的概括</p>
                         <p>Android provides a variety of powerful APIs for applying animation to UI elements and drawing custom 2D and 3D graphics. The sections below provide an overview of the APIs and system capabilities available and help you decide with approach is best for your needs.</p>
@@ -144,5 +144,16 @@
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script type="text/javascript">
+$(function(){
+    $(".nav-sidebar a").click(function(evt){
 
+        evt.preventDefault(); // 阻止默认的跳转操作
+
+        $("#Change_content").load($(this).attr('href'));
+
+    });
+
+})
+</script>
 </html>
